@@ -199,9 +199,10 @@
     }
 
     // Validate key with Vercel serverless function
+    // https://random-ad-test-ad-free-mode-activat-orcin.vercel.app/api/validateKey.js
     async function validateKeyWithServer(key) {
       try {
-        const res = await fetch("/api/validateKey", {
+        const res = await fetch("https://random-ad-test-ad-free-mode-activat-orcin.vercel.app/api/validateKey", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ key })
